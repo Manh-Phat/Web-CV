@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="cv-container">
+        <aside class="sidebar">
+            <div class="profile-pic">
+                <img src="hinhanh/avata.jpg" alt="Profile Picture">
+                <h2>NGUYỄN MẠNH PHÁT</h2>
+                <p class="job-title" data-lang ="job-title">Information Technology</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> About me</a></li>
+                    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="#experience"><i class="fas fa-bullseye"></i> Experience</a></li>
+                    <li><a href="#skills"><i class="fas fa-cogs"></i> Skill</a></li>
+                    <li><a href="#contact"><i class="fas fa-address-book"></i> Contact</a></li>
+
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <div class="language-switcher">
+                <button onclick="setLanguage('vi')">Vietnamese</button>
+                <button onclick="setLanguage('en')">English</button>
+            </div>
+            <section class="home" id="home">
+                <img src="hinhanh/soi-1.jpg" alt="Home">
+            </section>
+            <div class="box">
+                <section class="about" id="about">
+                    <h3 data-lang="about-title">About Me</h3>
+                    <p data-lang="about-name">Name: Nguyen Manh Phat</p>
+                    <p data-lang="about-sex">Sex: Male</p>
+                    <p data-lang="about-dob">Date of birth: 09-09-2005</p>
+                    <p data-lang="about-hometown">Hometown: Thu Dau Mot, Binh Duong, Viet Nam </p>
+                </section>
+                <a href="#" class="see-more"id="toggle-btn">🔼 see more</a>
+                <section class="favorites" id="favorites-section" style="display: none;">
+                    <h3 data-lang="favorites-title">ABOUT MY FAVORITES</h3>
+                    <div class="favorite-icon">
+                        <div class="fav-item">
+                            <img src="hinhanh/caulong.png" alt="Badminton">
+                            <p data-lang="fav-badminton">Badminton</p>
+                        </div>
+                        <div class="fav-item">
+                            <img src="hinhanh/bongda.png" alt="Football">
+                            <p data-lang="fav-football">Football</p>
+                        </div>
+                        <div class="fav-item">
+                            <img src="hinhanh/game.png" alt="Gaming">
+                            <p data-lang="fav-gaming">Gaming</p>
+                        </div>
+                        <div class="fav-item">
+                            <img src="hinhanh/cook.png" alt="Cooking">
+                            <p data-lang="fav-cooking">Cooking</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="experience" id="experience">
+                <h3 data-lang="experience-title">Work Experience</h3>
+                <div class="job">
+                    <h4 data-lang="experience-job1-title">Software Engineer</h4>
+                    <p><strong data-lang="experience-job1-company">ABC Tech Company </strong></p>
+                    <p data-lang="experience-job1-desc1">-Develop and maintain web applications using React.js and Node.js.</p>
+                    <p data-lang="experience-job1-desc2">-Design and optimize MongoDB and PostgreSQL databases.</p>
+                    <p data-lang="experience-job1-desc3">-Deploy and manage systems on AWS platform (EC2, S3, Lambda).</p>
+                    <p data-lang="experience-job1-desc4">-Collaborate with QA team to test and fix errors, improve system performance.</p>
+                    <p data-lang="experience-job1-desc5">-Build RESTful APIs and integrate with third-party services.</p>
+                </div>
+                <div class="job">
+                    <h4 data-lang="experience-job2-title">Backend Developer</h4>
+                    <p><strong data-lang="experience-job2-company">XYZ Solutions </strong> </p>
+                    <p data-lang="experience-job2-desc1">-Design and develop backend systems using Python (Django) and Node.js.</p>
+                    <p data-lang="experience-job2-desc2">-Optimize data query performance and enhance system security.</p>
+                    <p data-lang="experience-job2-desc3">-Build microservices to increase system scalability.</p>
+                    <p data-lang="experience-job2-desc4">-Work with Docker and Kubernetes to deploy applications in cloud environments.</p>
+                    <p data-lang="experience-job2-desc5">-Coordinate with frontend teams to ensure smooth user experience.</p>
+                </div>
+                <div class="job">
+                    <h4 data-lang="experience-job3-title">Intern - IT Support</h4>
+                    <p><strong  data-lang="experience-job3-company">DEF Corporation </strong></p>
+                    <p data-lang="experience-job3-desc1">-Support installation and maintenance of computer systems and internal networks.</p>
+                    <p data-lang="experience-job3-desc2">-Handle hardware and software problems and support users.</p>
+                    <p data-lang="experience-job3-desc3">-Write internal system user manuals.</p>
+                </div>
+            </section>
+            <section class="education" id="education">
+                <h3 data-lang="education-title">Education</h3>
+                <div class="degree">
+                    <h4 data-lang="education-degree1">Bachelor of Science in Computer Science</h4>
+                    <p><strong  data-lang="education-university">Binh Duong University</strong> | 2025</p>
+                    <p data-lang="education-gpa">-GPA: 3.7/4.0</p>
+                    <p data-lang="education-coursework">-Relevant Coursework: Data Structures & Algorithms, Software Engineering, Database Management, Artificial Intelligence</p>
+                    <p data-lang="education-project">-Senior Project: Developed a machine learning-based recommendation system for e-commerce platforms using Python and TensorFlow.</p>
+                </div>
+                <div class="degree">
+                    <h4 data-lang="education-certifications">Certifications & Training</h4>
+                    <p  data-lang="cert-aws">-AWS Certified Solutions Architect - Associate (2023)</p>
+                    <p  data-lang="cert-google">-Google Data Analytics Professional Certificate (2022)</p>
+                    <p  data-lang="cert-azure">-Microsoft Azure Fundamentals (AZ-900) (2021)</p>
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <h3  data-lang="skills-title">Technical Skills</h3>
+                <div class="degree">
+                    <h4 data-lang="skills-programming">Programming Languages:</h4>
+                    <p  data-lang="skills-languages">Python, Java, JavaScript, C++, SQL</p>
+                </div>
+                <div class="degree">
+                    <h4 data-lang="skills-web">Web Development</h4>
+                    <p data-lang="skills-frontend">Frontend: React.js, Vue.js, HTML, CSS, Tailwind, Bootstrap</p>
+
+                </div>
+                <div class="degree">
+                    <h4 data-lang="skills-database">Database Management</h4>
+                    <p data-lang="skills-db">MySQL, PostgreSQL,Firebase</p>
+                </div>
+                <div class="degree">
+                    <h4 data-lang="skills-language">English</h4>
+                    <p data-lang="skills-english">The level is still at an average level, automatically scoring the body level B1, can continue basic communication with foreigners, but still needs improvement in listening.</p>
+                </div>
+                <div class="degree">
+                    <h4 data-lang="skills-tools">Tools & Version Control</h4>
+                    <p data-lang="skills-tools-list">Git, GitHub, GitLab, Jira, Postman</p>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <h3 data-lang="contact-title">My Info</h3>
+                <div class="contact-info">
+                <p data-lang="contact-address"><i class="fas fa-map-marker-alt"> </i> 20, DX82, Dinh Hoa, Thu Dau Mot, Binh Duong</p>
+                <p  data-lang="contact-email"><i class="fas fa-envelope"> </i> 23050099@student.bdu.edu.vn</p>
+                <p data-lang="contact-phone"><i class="fas fa-phone"> </i> 038 269 6897</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

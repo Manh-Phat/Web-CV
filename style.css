@@ -1,0 +1,216 @@
+/* Định dạng tổng thể */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 350px;
+    height: 100vh;
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    position: fixed;
+}
+
+.profile-pic {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.social-icons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu ul {
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 15px 0;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li a i {
+    margin-right: 10px;
+}
+
+.job-title {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Nội dung chính */
+.content {
+    margin-left: 370px;
+    padding: 20px;
+    max-width: 1200px;
+    background: rgb(250, 247, 247);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Định dạng chung cho các box */
+.box, .experience, .education, .skills {
+    border: 3px solid blue; /* Viền màu xanh */
+    border-radius: 15px; /* Bo góc */
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 255, 0.2); /* Đổ bóng nhẹ */
+}
+
+/* Tiêu đề trong box */
+.box h3, .experience h3, .education h3, .skills h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Căn chỉnh nội dung trong box */
+.box p, .experience p, .education p, .skills p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Điều chỉnh danh sách kỹ năng */
+.skills ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Icon trong phần Personal Details */
+.personal-details p i {
+    margin-right: 8px;
+    color: blue;
+}
+
+/* Cách đoạn giữa các mục */
+.job, .degree {
+    margin-top: 10px;
+}
+
+/* Căn chỉnh nội dung để đẹp hơn */
+.about, .personal-details, .languages {
+    margin-bottom: 10px;
+}
+
+/* Nút chuyển ngôn ngữ */
+.language-switcher {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.language-switcher button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    transition: 0.3s;
+}
+
+.language-switcher button:hover {
+    background: #0056b3;
+}
+/* Thêm khung cho phần Contact me */
+.contact {
+    border: 3px solid blue; /* Viền màu xanh */
+    border-radius: 15px; /* Bo góc */
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 255, 0.2); /* Đổ bóng nhẹ */
+}
+
+.home img {
+    width: 100%; /* Giãn theo khung */
+    max-height: 400px; /* Không quá cao */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Căn chỉnh ảnh */
+.image-container {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 20px; /* Điều chỉnh khoảng cách trên */
+    max-width: 100%;
+    max-height: 80vh; /* Giới hạn chiều cao tối đa 80% viewport */
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: 100%; /* Giới hạn chiều rộng tối đa */
+    max-height: 80vh; /* Giữ cho ảnh không vượt quá 80% chiều cao màn hình */
+    height: auto; /* Giữ tỷ lệ ảnh */
+    object-fit: contain; /* Giữ toàn bộ ảnh trong khung */
+    border-radius: 15px; /* Bo góc nhẹ */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+}
+
+/* Căn chỉnh phần About My Favorites */
+.favorite-icon {
+    display: flex; 
+    justify-content: center; /* Căn giữa các mục */
+    gap: 30px; /* Khoảng cách giữa các mục */
+    flex-wrap: wrap; /* Tự động xuống dòng nếu không đủ chỗ */
+    margin-top: 20px;
+}
+
+/* Căn chỉnh từng mục */
+.fav-item {
+    text-align: center; /* Căn giữa nội dung */
+    max-width: 150px; /* Giới hạn chiều rộng */
+}
+
+/* Chỉnh kích thước hình ảnh */
+.fav-item img {
+    width: 100px; /* Điều chỉnh kích thước hình */
+    height: auto;
+    border-radius: 10px; /* Bo góc nhẹ */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+}
